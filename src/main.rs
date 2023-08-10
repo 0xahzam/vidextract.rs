@@ -7,7 +7,7 @@ use std::io::{copy, Write};
 use std::{error::Error, io};
 
 async fn download_video_url(url: &str) -> Result<(), Box<dyn Error>> {
-    println!("\n{}", "[2/3] 🥤 extracting...".yellow());
+    println!("\n{}", "[2/4] 🥤 extracting...".yellow());
 
     let browser = Browser::default()?;
     let tab = browser.new_tab()?;
@@ -56,7 +56,7 @@ async fn download_video_url(url: &str) -> Result<(), Box<dyn Error>> {
 async fn main() {
     println!("\n{}","gm — this cli is for downloading videos from instagram reels, threads or twitter/x. hope u enjoy find it useful 💛".bright_magenta());
 
-    print!("\n{}", "[1/3] 🔗 url: ".bright_cyan());
+    print!("\n{}", "[1/4] 🔗 url: ".bright_cyan());
     io::stdout().flush().unwrap();
 
     let mut input = String::new();
