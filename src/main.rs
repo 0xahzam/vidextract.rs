@@ -54,7 +54,7 @@ async fn download_video_url(url: &str) -> Result<(), Box<dyn Error>> {
 
 #[tokio::main]
 async fn main() {
-    println!("\n{}","gm — this cli is for downloading videos from instagram reels, threads or twitter/x. hope u enjoy find it useful 💛".bright_magenta());
+    println!("\n{}","gm — this cli is for downloading videos from instagram reels, threads or twitter/x. hope you find it useful 💛".bright_magenta());
 
     print!("\n{}", "[1/4] 🔗 url: ".bright_cyan());
     io::stdout().flush().unwrap();
