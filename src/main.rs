@@ -24,7 +24,7 @@ async fn download_video_url(url: &str) -> Result<(), Box<dyn Error>> {
             let response = reqwest::get(url).await?;
 
             if response.status().is_success() {
-                print!("\n{}", "[4/4] 📂 enter file name: ".bright_cyan());
+                print!("\n{}", "[4/4] 📂 file name: ".bright_cyan());
 
                 io::stdout().flush().unwrap();
                 let mut input = String::new();
@@ -56,7 +56,7 @@ async fn download_video_url(url: &str) -> Result<(), Box<dyn Error>> {
 async fn main() {
     println!("\n{}","gm — this cli is for downloading videos from instagram reels, threads or twitter/x. hope u enjoy find it useful 💛".bright_magenta());
 
-    print!("\n{}", "[1/3] 🔗 enter url: ".bright_cyan());
+    print!("\n{}", "[1/3] 🔗 url: ".bright_cyan());
     io::stdout().flush().unwrap();
 
     let mut input = String::new();
